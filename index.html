@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>StroyDom</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <div class="header primary-border">
+        <div class="basic-container header-container">
+            <div class="header__left-item" id="header__left-item">
+                <button id="header__menu-btn" class="icon-btn primary-text">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="header__center-item">
+                <h4 class="header__title primary-text">StroyDom</h4>
+            </div>
+            <div class="header__right-item">
+                <svg id="header__user-btn" 
+                    class="primary-fill"
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 16C7.34315 16 6 17.3431 6 19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19C18 17.3431 16.6569 16 15 16H9ZM4 19C4 16.2386 6.23858 14 9 14H15C17.7614 14 20 16.2386 20 19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19Z" fill="#F2F2F2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.3431 4 9 5.34315 9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4ZM7 7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7C17 9.76142 14.7614 12 12 12C9.23858 12 7 9.76142 7 7Z" fill="#F2F2F2"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO -->
+
+    <div class="hero">
+        <div class="basic-container flex-container hero__container">
+            <div class="hero__left">
+                <div class="hero__desc-container">
+                    <img src="./assets/hero_title_light.png" 
+                        id="hero-title-img"
+                        alt="hero-title" 
+                        class="hero__title-img">
+                    <h4 class="hero__subtitle sub-text">
+                        Покупайте строительные материалы без посредников. Доставка за наш счёт.
+                    </h4>
+                </div>
+                <div class="flex-container gap-1">
+                    <button class="basic-btn">
+                        Зарегистрироваться
+                    </button>
+                    <button class="secondary-btn">
+                        Как это работает?
+                    </button>
+                </div>
+            </div>
+            <div class="hero__img">
+                <img src="./assets/Иллюстрации (Right).png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- MINI-FEATURES -->
+
+    <div class="mini-features light-grey-bg">
+        <div class="basic-container flex-container">
+            <div class="mini-features__item">
+                <div class="mini-features__icon">
+                    <img src="./assets/gruz-200.png" alt="">
+                </div>
+                <div class="mini-features__desc-container">
+                    <h5 class="mini-features__desc-title primary-text">
+                        Бесплатная Доставка
+                    </h5>
+                    <p class="mini-features__desc-subtitle sub-text">
+                        Доставим в срок любой груз, у нас работают 541 машин.
+                    </p>
+                </div>
+            </div>
+            <div class="mini-features__item">
+                <div class="mini-features__icon">
+                    <img src="./assets/Video.png" alt="">
+                </div>
+                <div class="mini-features__desc-container">
+                    <h5 class="mini-features__desc-title primary-text">
+                        Видеосообщения
+                    </h5>
+                    <p class="mini-features__desc-subtitle sub-text">
+                        Проверяйте качество строительных товаров через видео сообщения.
+                    </p>
+                </div>
+            </div>
+            <div class="mini-features__item">
+                <div class="mini-features__icon">
+                    <img src="./assets/Shopping List.png" alt="">
+                </div>
+                <div class="mini-features__desc-container">
+                    <h5 class="mini-features__desc-title primary-text">
+                        Рейтинг и Отвественность
+                    </h5>
+                    <p class="mini-features__desc-subtitle sub-text">
+                        Наши пользователи составляют рейтинг поставщиков.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURES -->
+
+    <div class="basic-container flex-container features">
+        <div class="features__left">
+            <h4 class="features__title primary-text">
+                Заказывайте и творите 
+                <!-- 🏘 -->
+                <img src="./assets/icons8-houses-96.png" alt="" class="features__title-img">
+            </h4>
+            <p class="features__subtitle sub-text">
+                Получите доступ к обширной базе поставщиков и заказывайте стройматериалы выгодно уже сейчас.
+            </p>
+            <div class="features__form-top">
+                <div class="features__form-box">
+                    <label for="fullname" class="features__form-label primary-text">
+                        Введите ваше ФИО
+                    </label>
+                    <input placeholder="Алтын Оспанова" type="text" class="features__form-field">
+                </div>
+                <div class="features__form-box">
+                    <label for="fullname" class="features__form-label primary-text">
+                        Введите ваш номер
+                    </label>
+                    <input placeholder="+7 (777) 777 77 77" type="tel" class="features__form-field">
+                </div>
+            </div>
+            <div class="features__form-bottom">
+                <div class="features__checkbox">
+                    <input type="checkbox" name="" id="features__checkbox-input" class="features_checkbox-input">
+                    <label for="features__checkbox-input" class="features__checkbox-label">
+                        Создание учетной записи означает, что Вы согласны с нашими Условиями обслуживания и Политикой конфиденциальности.
+                    </label>
+                </div>
+                <div class="features__btn-box">
+                    <button class="basic-btn">
+                        Зарегистрироваться
+                    </button>
+                    <p class="features__btn-bottom">
+                        Уже есть аккаунт? 
+                        <a href="">
+                            Войти
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="features__right">
+
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
