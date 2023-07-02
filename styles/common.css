@@ -1,0 +1,173 @@
+.dark-mode {
+  background-color: #12131A;
+}
+.dark-mode .primary-text {
+  color: #F2F2F2;
+}
+.dark-mode .primary-fill {
+  fill: #F2F2F2;
+}
+.dark-mode .primary-fill path {
+  fill: #F2F2F2;
+}
+.dark-mode .primary-border {
+  border: 1px solid #F2F2F2;
+}
+.dark-mode .sub-text {
+  color: #E0E0E0;
+}
+.dark-mode .light-grey-bg {
+  background-color: #4F4F4F;
+}
+
+.light-mode {
+  background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #12131A;
+  }
+  body .primary-text {
+    color: #F2F2F2;
+  }
+  body .primary-fill {
+    fill: #F2F2F2;
+  }
+  body .primary-fill path {
+    fill: #F2F2F2;
+  }
+  body .primary-border {
+    border: 1px solid #F2F2F2;
+  }
+  body .sub-text {
+    color: #E0E0E0;
+  }
+  body .light-grey-bg {
+    background-color: #4F4F4F;
+  }
+}
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 8px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.basic-container {
+  width: 90%;
+  margin: 0 auto 4rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basic-btn {
+  background-color: #EB5757;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 2rem;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #EB5757;
+  border: 1px solid #EB5757;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 2rem;
+}
+
+.primary-text {
+  color: #333333;
+}
+
+.primary-fill {
+  fill: #333333;
+}
+.primary-fill path {
+  fill: #333333;
+}
+
+.primary-border {
+  border: 1px solid #E0E0E0;
+}
+
+.sub-text {
+  color: #828282;
+}
+
+.item-title {
+  font-size: 3rem;
+}
+
+.light-grey-bg {
+  background-color: rgba(0, 0, 0, 0.0509803922);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.icon-btn i {
+  font-size: 3rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-container {
+    flex-wrap: nowrap;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */

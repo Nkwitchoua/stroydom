@@ -1,0 +1,193 @@
+$primary-color: #333333;
+$primary-color--dark: #F2F2F2;
+$primary-border: #E0E0E0;
+$primary-border--dark: #F2F2F2;
+$secondary-color: #828282;
+$attention-color: #EB5757;
+$light-color: #F2F2F2;
+$white: #FFFFFF;
+$black: #000000;
+$light-grey: #0000000D;
+$dark-grey: #4F4F4F;
+$bg-green: #2AB6911A;
+$bg-dark: #12131A;
+$bg-yellow: #FEBE55;
+$bg-green: #2AB691;
+
+@mixin dark-mode {
+    background-color: $bg-dark;
+
+    .primary-text {
+        color: $primary-color--dark;
+    }
+    .primary-fill {
+        fill: $primary-color--dark;
+        path {
+            fill: $primary-color--dark;
+        }
+    }
+    .primary-border {
+        border: 1px solid $primary-border--dark;
+    }
+    .sub-text {
+        color: $primary-border;
+    }
+    .light-grey-bg {
+        background-color: $dark-grey;
+    }
+}
+
+@mixin light-mode {
+    $primary-color: #333333;
+    background-color: white;
+}
+
+.dark-mode {
+    @include dark-mode;
+}
+
+.light-mode {
+    @include light-mode;
+}
+
+// MIXINS
+
+@media (prefers-color-scheme: dark) {
+    body {
+        @include dark-mode;
+    }
+}
+
+@mixin basic-margin-bottom {
+    margin-bottom: 4rem;
+}
+
+@mixin btn-base {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 2rem;
+}
+
+// BASIC TAGS
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 8px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+button[disabled] {
+    //background-color: $disabled-color;
+}
+
+.basic-container {
+    width: 90%;
+    margin: 0 auto 4rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basic-btn {
+    background-color: $attention-color;
+    color: $white;
+    @include btn-base;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: $attention-color;
+    border: 1px solid $attention-color;
+    @include btn-base;
+}
+
+.primary-text {
+    color: $primary-color;
+}
+
+.primary-fill {
+    fill: $primary-color;
+    path {
+        fill: $primary-color;
+    }
+}
+
+.primary-border {
+    border: 1px solid $primary-border;
+}
+
+.sub-text {
+    color: $secondary-color;
+}
+
+.item-title {
+    font-size: 3rem;
+}
+
+.light-grey-bg {
+    background-color: $light-grey;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.icon-btn {
+    i {
+        font-size: 3rem;
+    }
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+.gap-3 {
+    gap: 3rem;
+}
+.gap-4 {
+    gap: 4rem;
+}
+.gap-5 {
+    gap: 5rem;
+}
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 768px) {
+    .flex-container {
+        flex-wrap: nowrap;
+    }
+}
