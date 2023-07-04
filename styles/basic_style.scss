@@ -35,6 +35,9 @@ $bg-green: #2AB691;
     .light-grey-bg {
         background-color: $dark-grey;
     }
+    .features-border {
+        border-left: 1px solid #4F4F4F;
+    }
 }
 
 @mixin light-mode {
@@ -48,6 +51,10 @@ $bg-green: #2AB691;
 
 .light-mode {
     @include light-mode;
+}
+
+.features-border {
+    border-right: 1px solid $primary-border;
 }
 
 // MIXINS
@@ -101,8 +108,13 @@ p {
     margin: 0;
 }
 
+
 button[disabled] {
     //background-color: $disabled-color;
+}
+
+.hidden {
+    display: none !important;
 }
 
 .basic-container {
@@ -190,4 +202,8 @@ button {
     .flex-container {
         flex-wrap: nowrap;
     }
+    // .basic-container {
+    //     width: 90%;
+    //     margin: 0 auto 4rem;
+    // }
 }

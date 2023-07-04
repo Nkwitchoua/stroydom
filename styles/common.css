@@ -19,9 +19,16 @@
 .dark-mode .light-grey-bg {
   background-color: #4F4F4F;
 }
+.dark-mode .features-border {
+  border-left: 1px solid #4F4F4F;
+}
 
 .light-mode {
   background-color: white;
+}
+
+.features-border {
+  border-right: 1px solid #E0E0E0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,6 +52,9 @@
   }
   body .light-grey-bg {
     background-color: #4F4F4F;
+  }
+  body .features-border {
+    border-left: 1px solid #4F4F4F;
   }
 }
 * {
@@ -75,6 +85,10 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .basic-container {
