@@ -4,6 +4,7 @@ $primary-border: #E0E0E0;
 $primary-border--dark: #F2F2F2;
 $secondary-color: #828282;
 $attention-color: #EB5757;
+$attention-color-hover: #d85353;
 $light-color: #F2F2F2;
 $white: #FFFFFF;
 $black: #000000;
@@ -36,7 +37,7 @@ $bg-green: #2AB691;
         background-color: $dark-grey;
     }
     .features-border {
-        border-left: 1px solid #4F4F4F;
+        border-right: 1px solid #4F4F4F;
     }
 }
 
@@ -51,10 +52,6 @@ $bg-green: #2AB691;
 
 .light-mode {
     @include light-mode;
-}
-
-.features-border {
-    border-right: 1px solid $primary-border;
 }
 
 // MIXINS
@@ -74,6 +71,8 @@ $bg-green: #2AB691;
     padding: 12px;
     border-radius: 4px;
     font-size: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 // BASIC TAGS
@@ -135,9 +134,20 @@ button[disabled] {
     @include btn-base;
 }
 
+.basic-btn:hover {
+    background-color: $attention-color-hover;
+}
+
 .secondary-btn {
     background-color: transparent;
     color: $attention-color;
+    border: 1px solid $attention-color;
+    @include btn-base;
+}
+
+.secondary-btn:hover {
+    background-color: $attention-color;
+    color: $white;
     border: 1px solid $attention-color;
     @include btn-base;
 }
@@ -201,6 +211,9 @@ button {
 @media screen and (min-width: 768px) {
     .flex-container {
         flex-wrap: nowrap;
+    }
+    .features-border {
+        border-right: 1px solid $primary-border;
     }
     // .basic-container {
     //     width: 90%;

@@ -20,15 +20,11 @@
   background-color: #4F4F4F;
 }
 .dark-mode .features-border {
-  border-left: 1px solid #4F4F4F;
+  border-right: 1px solid #4F4F4F;
 }
 
 .light-mode {
   background-color: white;
-}
-
-.features-border {
-  border-right: 1px solid #E0E0E0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,7 +50,7 @@
     background-color: #4F4F4F;
   }
   body .features-border {
-    border-left: 1px solid #4F4F4F;
+    border-right: 1px solid #4F4F4F;
   }
 }
 * {
@@ -110,6 +106,12 @@ p {
   padding: 12px;
   border-radius: 4px;
   font-size: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.basic-btn:hover {
+  background-color: #d85353;
 }
 
 .secondary-btn {
@@ -120,6 +122,20 @@ p {
   padding: 12px;
   border-radius: 4px;
   font-size: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background-color: #EB5757;
+  color: #FFFFFF;
+  border: 1px solid #EB5757;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .primary-text {
@@ -181,6 +197,9 @@ button {
 @media screen and (min-width: 768px) {
   .flex-container {
     flex-wrap: nowrap;
+  }
+  .features-border {
+    border-right: 1px solid #E0E0E0;
   }
 }
 

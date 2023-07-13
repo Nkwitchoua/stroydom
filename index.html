@@ -16,16 +16,16 @@
     <!-- HEADER -->
 
     <div class="header primary-border">
-        <div class="basic-container header-container">
-            <div class="header__left-item" id="header__left-item">
+        <div class="basic-container header-container" id="header-mobile">
+            <div class="header__left-item" id="header-left">
                 <button id="header__menu-btn" class="icon-btn primary-text">
                     <i class="fa fa-bars"></i>
                 </button>
             </div>
-            <div class="header__center-item">
+            <div class="header__center-item" id="header-center">
                 <h4 class="header__title primary-text">StroyDom</h4>
             </div>
-            <div class="header__right-item">
+            <div class="header__right-item" id="header-right">
                 <svg id="header__user-btn" 
                     class="primary-fill"
                     width="24" 
@@ -37,6 +37,58 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.3431 4 9 5.34315 9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4ZM7 7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7C17 9.76142 14.7614 12 12 12C9.23858 12 7 9.76142 7 7Z" fill="#F2F2F2"/>
                 </svg>
             </div>
+        </div>
+        <div class="mobile-menu scale-up-ver-top" id="mobile-menu">
+            <div class="header-links--mobile">
+                <a href="" class="header-links__link">
+                    Маркетплейс
+                </a>
+                <a href="" class="header-links__link">
+                    Как это работает?
+                </a>
+                <a href="" class="header-links__link">
+                    О нас
+                </a>
+                <a href="" class="header-links__link">
+                    Контакты
+                </a>
+            </div>
+            <div class="header-btns--mobile">
+                <button style="color: #EB5757" id="theme-switch-btn" class="header-btns__btn">
+                    Рус
+                </button>
+                <button class="header-btns__btn">
+                    Войти
+                </button>
+            </div>
+        </div>
+        <div id="header-desktop" style="display: none;">
+            <div class="basic-container header-container">
+
+                <h3 class="primary-text header__title">StroyDom</h3>
+                <div class="header-links--desktop">
+                    <a href="" class="header-links__link">
+                        Маркетплейс
+                    </a>
+                    <a href="" class="header-links__link">
+                        Как это работает?
+                    </a>
+                    <a href="" class="header-links__link">
+                        О нас
+                    </a>
+                    <a href="" class="header-links__link">
+                        Контакты
+                    </a>
+                </div>
+                <div class="header-btns--desktop">
+                    <button class="header-btns__btn">
+                        Рус
+                    </button>
+                    <button class="header-btns__btn">
+                        Войти
+                    </button>
+                </div>
+            </div> 
         </div>
     </div>
 
@@ -144,7 +196,7 @@
             <div class="features__form-bottom">
                 <div class="features__checkbox">
                     <input type="checkbox" name="" id="features__checkbox-input" class="features_checkbox-input">
-                    <label for="features__checkbox-input" class="features__checkbox-label">
+                    <label for="features__checkbox-input" class="features__checkbox-label primary-text">
                         Создание учетной записи означает, что Вы согласны с нашими Условиями обслуживания и Политикой конфиденциальности.
                     </label>
                 </div>
@@ -168,7 +220,8 @@
                         src="./assets/slide_img_1.png" 
                         alt="Slide image" 
                         class="slider-image"
-                        id="slider-image">
+                        id="slider-image"
+                        img-index="0">
                     <div class="slide-btns-container">
                         <div class="slide-btn hidden" id="slide-left">
                             <i class="fa-solid fa-chevron-right fa-rotate-180"></i>
@@ -189,10 +242,21 @@
                     </p>
                     <div class="slider-counter">
                         <div class="slider-counter__box">
-                            <div class="slider-counter__circle slider-counter__circle--active"></div>
-                            <div class="slider-counter__circle"></div>
-                            <div class="slider-counter__circle"></div>
-                            <div class="slider-counter__circle"></div>
+                            <div 
+                            index="0"
+                            class="slider-counter__circle slider-counter__circle--active"></div>
+                            <div 
+                            index="1"
+                            class="slider-counter__circle"></div>
+                            <div 
+                            index="2"
+                            class="slider-counter__circle"></div>
+                            <div 
+                            index="3"
+                            class="slider-counter__circle"></div>
+                            <div 
+                            id="moving-circle"
+                            class="slider-counter__moving-circle"></div>
                         </div>
                     </div>
                 </div>
